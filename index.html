@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VibeBox 🎵</title>
   <style>
-    /* Reset & Base */
     * {
       margin: 0;
       padding: 0;
@@ -23,7 +22,7 @@
       color: inherit;
     }
 
-    /* Top Bar */
+   
     .top-bar {
       display: flex;
       justify-content: space-between;
@@ -100,14 +99,13 @@
       100% { transform: translateX(0); }
     }
 
-    /* Layout */
     .app {
       display: flex;
       background-color: #181818;
       padding-bottom: 90px;
     }
 
-    /* Sidebar */
+  
     .sidebar {
       width: 240px;
       background-color: #1c1c1c;
@@ -137,7 +135,7 @@
       color: #000;
     }
 
-    /* Main Content */
+   
     .main-content {
       flex: 1;
       padding: 30px;
@@ -195,7 +193,7 @@
       color: #ccc;
     }
 
-    /* Playbar */
+   
     .playbar {
       position: fixed;
       bottom: 0;
@@ -218,7 +216,7 @@
       width: 250px;
     }
 
-    /* Footer */
+    
     .footer-bar {
       text-align: center;
       padding: 15px;
@@ -227,7 +225,7 @@
       font-size: 14px;
     }
 
-    /* Responsive */
+
     @media (max-width: 768px) {
       .carousel-wrapper {
         height: 60vh;
@@ -263,7 +261,7 @@
       }
     }
     .emoji {
-      color: #17d9b2; /* ✅ Add this to change 🎶 color */
+      color: #17d9b2;
       font-size: 2.5rem;
     }
 
@@ -320,7 +318,7 @@ li {
 </head>
 <body>
 
-  <!-- Top Bar -->
+ 
   <div class="top-bar">
     <div class="logo">
       <img src="https://cdn.pixabay.com/photo/2023/03/06/13/58/logo-7833520_1280.png" alt="VibeBox Logo" class="logo-img">
@@ -331,7 +329,6 @@ li {
     <input type="text" id="searchInput" placeholder="Search for your vibe 🎶" />
   </div>
 
-  <!-- Carousel -->
   <section class="carousel-wrapper">
     <div class="carousel">
       <img src="https://imgs.search.brave.com/mfUlPHaH7WXVAm1sFyJCMPKfaC9uVHKrkaDcQ_FjQHM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jbG9zZS11cC1k/ai1oYW5kcy1kai1j/b25zb2xlLW1peGVy/LWNvbmNlcnQtY2x1/Yl85MzY3NS0xNDcx/OTYuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MA" alt="Slide 1">
@@ -340,12 +337,9 @@ li {
     </div>
   </section>
 
-  <!-- App Layout -->
-  <!-- <div class="app">
-    <!-- Sidebar -->
- 
 
-    <!-- Main Content -->
+
+   
     <main class="main-content">
         <section id="best-of-ringtone">
 
@@ -354,7 +348,7 @@ li {
           <h2>🔥 Best Of Ringtones (As Per Search)</h2>
         </div>
         <div class="card-container">
-          <!-- Replace these with your actual content or audio links -->
+  
           <div class="track"><img src="https://imgs.search.brave.com/Pr3UJ1GT_AWDkbMSY8AHhsHSmW69aOLIoATcS0faRXo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1HTmxPRFJo/WWpFdE1UWTNaQzAw/WTJRd0xUazBZMkl0/TkRFME5EVXlZbVF4/WVdRNFhrRXlYa0Zx/Y0djQC5qcGc" alt=""></div>
           <div class="track"><img src="https://imgs.search.brave.com/VXISmdRNC95TVG1iVfhOMK3Rdutw8BNQKbSK1qC2jYY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZXNv/dXJjZXMudGlkYWwu/Y29tL2ltYWdlcy82/OWJkNjI3Zi9hNzYz/LzRiMmMvODA1ZS9h/N2YyOTJhNDAxNmYv/NjQweDY0MC5qcGc" alt=""></div>
           <div class="track"><img src="https://imgs.search.brave.com/dtGymez3OhYsjxd0mX8POc8hMq7rlbuL0KqkasMYOlo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly8xYS0x/NzkxLmNvbS92aWRl/by9zOC8xLzEvVS9m/L0wvMVVmTHUuNVE0/ZS1zbWFsbC1KZWVu/ZS1MYWdhLUhvb24t/U2xvd2VkLVJldmUu/anBn" alt=""></div>
@@ -370,21 +364,20 @@ li {
       </section>
 
 
-      <!-- Available Songs -->
-<!-- Search Bar -->
+     
 <section class="search-section">
     <h2>Search Songs in the Search Bar Above</h2>
-    <!-- <input type="text" id="searchInput" placeholder="Search for a song..."> -->
+  
     <button onclick="searchSongs()">click here</button>
   </section>
   
-  <!-- Search Results -->
+
   <section class="search-results">
     <h3>Search Results</h3>
     <ul id="resultsList"></ul>
   </section>
   
-  <!-- Your Playlist -->
+
   <section class="your-playlist">
     <h3>Your Playlist</h3>
     <ul id="playlist"></ul>
@@ -416,7 +409,6 @@ li {
     </main>
   </div>
 
-  <!-- Playbar -->
   <div class="playbar">
     <div class="track-info">Now Playing: No song selected</div>
     <audio controls src=""></audio>
@@ -427,13 +419,13 @@ li {
     const playbarTrackInfo = document.querySelector(".track-info");
     const audioPlayer = document.querySelector("audio");
     const resultsList = document.getElementById("resultsList");
-    const playlist = new Map(); // Title → Preview URL
+    const playlist = new Map();
     const ringtoneSection = document.getElementById("best-of-ringtone");
   
     let currentAudio = null;
     let currentlyPlayingUrl = null;
   
-    // ================== EVENT LISTENERS ==================
+   
     searchInput.addEventListener("input", searchMusic);
   
     searchInput.addEventListener("keydown", function (event) {
@@ -446,7 +438,7 @@ li {
       }
     });
   
-    // ================== STATIC TRACKS EVENT ==================
+
     function addEventListenersToStaticTracks() {
       document.querySelectorAll(".track[data-url]").forEach(card => {
         card.addEventListener("click", function () {
@@ -457,7 +449,7 @@ li {
       });
     }
   
-    // ================== SEARCH FUNCTION ==================
+    
     async function searchMusic() {
       const query = searchInput.value.trim();
       if (query === "") {
@@ -500,9 +492,9 @@ li {
       return card;
     }
   
-    // ================== UNIVERSAL SONG PLAY FUNCTION ==================
+  
     function playSong(url, title = "Now Playing") {
-      // Stop previous song if any
+     
       if (currentAudio && currentlyPlayingUrl === url) {
         currentAudio.pause();
         currentlyPlayingUrl = null;
@@ -526,7 +518,7 @@ li {
         });
     }
   
-    // ================== PLAYLIST HANDLERS ==================
+   
     async function searchSongs() {
       const query = document.getElementById("searchInput").value.trim();
       const url = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}&media=music&limit=10`;
@@ -586,13 +578,12 @@ li {
       });
     }
   
-    // ================== INIT ==================
+
     window.onload = () => {
       addEventListenersToStaticTracks();
     };
   </script>
   
-  <!-- Footer -->
   <footer class="footer-bar">
     &copy; 2025 VibeBox. Built with 🎶 by Arpit.
   </footer>
